@@ -54,6 +54,7 @@ contract TestWallet is
         _setTokenURI(_noticeId, _noticeURI);
     }
 
+
     /**
      * @dev Burn a notice belonging to the specified tokenId.
      * @param _noticeId ID of the notice to burn.
