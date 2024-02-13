@@ -1,19 +1,19 @@
 const { ethers, upgrades, run } = require("hardhat");
 
 async function main() {
-  const RedWallet = await hre.ethers.getContractFactory("RedWallet");
-  console.log("Deploying RedWallet Contract...");
+  const testWallet = await hre.ethers.getContractFactory("TestWallet");
+  console.log("Deploying TestWallet Contract...");
 
-  const redWallet = await RedWallet.deploy({ gasPrice: 30000000000 });
-  await redWallet.waitForDeployment();
-  const RedWalletAddress = await redWallet.getAddress();
-  console.log("RedWallet Contract Address:", RedWalletAddress);
+  const TestWallet = await testWallet.deploy({ gasPrice: 30000000000 });
+  await TestWallet.waitForDeployment();
+  const TestWalletAddress = await TestWallet.getAddress();
+  console.log("TestWallet Contract Address:", TestWalletAddress);
   console.log("----------------------------------------------------------");
 
-  // Verify RedWallet
-  console.log("Verifying RedWallet...");
+  // Verify TestWallet
+  console.log("Verifying TestWallet...");
   await run("verify:verify", {
-    address: RedWalletAddress,
+    address: TestWalletAddress,
     constructorArguments: [],
   });
   console.log("----------------------------------------------------------");
@@ -25,3 +25,4 @@ main().catch((error) => {
 });
 
 // yarn hardhat run scripts/deploy.js --network mumbai
+// https://mumbai.polygonscan.com/address/0x944fBbe3a97B29412C9a1cF8c09074253d91Ad56#code
