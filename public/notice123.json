@@ -1,0 +1,35 @@
+{
+  "name": "Police #123",
+  "description": "ABOUT: This is Money Laundering notice, you are involved in Hacking of Funds case. Please revert back within 10 Days!",
+  "external_url": "https://red-wallet.vercel.app/",
+  "image": "https://ipfs.io/ipfs/QmamLyv579kjEaEe6QjdJJRmVF7rMSrHszxgXYXxQgCMHz",
+  "image_url": "https://ipfs.io/ipfs/QmamLyv579kjEaEe6QjdJJRmVF7rMSrHszxgXYXxQgCMHz",
+  "attributes": [
+    {
+      "trait_type": "Case Number",
+      "value": "123"
+    },
+    {
+      "trait_type": "Country",
+      "value": "India"
+    },
+    {
+      "trait_type": "Department",
+      "value": "Police Force"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Money Laundering"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "Notice Issued Date",
+      "value": 1707981699
+    },
+    {
+      "display_type": "date",
+      "trait_type": "Notice Last Date",
+      "value": 1708845699
+    }
+  ]
+}
